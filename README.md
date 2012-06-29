@@ -7,5 +7,9 @@ This app was built going through [this tutorial](http://www.raywenderlich.com/51
 	git clone git@github.com:sens3/kraut-example.git
 	cd kraut-example
 	git submodule update --init --recursive
+	open Ratings.xcodeproj
+	
+	## build the project in xcode ##
+	
 	cd Ratings/UIAutomationTests/
 	./run_instruments.sh
