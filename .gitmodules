@@ -1,0 +1,3 @@
+[submodule "Ratings/UIAutomationTests/js/kraut"]
+	path = Ratings/UIAutomationTests/js/kraut
+	url = git://github.com/sens3/kraut.git
