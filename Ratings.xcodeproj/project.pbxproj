@@ -10,6 +10,7 @@
 		A78AA48315643B9000B62AD8 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A78AA48215643B9000B62AD8 /* PlayerCell.m */; };
 		A78AA4871564453600B62AD8 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78AA4861564453600B62AD8 /* PlayerDetailsViewController.m */; };
 		A78AA48A15654A0C00B62AD8 /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78AA48915654A0C00B62AD8 /* GamePickerViewController.m */; };
+		A7AAE73B15A64C6800781D56 /* mine.js in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE73A15A64C6800781D56 /* mine.js */; };
 		A7B1F6741563EF2F000254EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B1F6731563EF2F000254EF /* UIKit.framework */; };
 		A7B1F6761563EF2F000254EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B1F6751563EF2F000254EF /* Foundation.framework */; };
 		A7B1F6781563EF2F000254EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B1F6771563EF2F000254EF /* CoreGraphics.framework */; };
@@ -50,7 +51,6 @@
 		A76863B2159E422500868064 /* gestures.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = gestures.feature; sourceTree = "<group>"; };
 		A76863B3159E422500868064 /* players.feature */ = {isa = PBXFileReference; lastKnownFileType = text; path = players.feature; sourceTree = "<group>"; };
 		A76863DC159E422500868064 /* main.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
-		A76863DD159E422500868064 /* step_definitions.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = step_definitions.js; sourceTree = "<group>"; };
 		A76863DE159E422500868064 /* run_instruments.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = run_instruments.sh; sourceTree = "<group>"; };
 		A78AA48115643B9000B62AD8 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
 		A78AA48215643B9000B62AD8 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
@@ -58,6 +58,7 @@
 		A78AA4861564453600B62AD8 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 		A78AA48815654A0C00B62AD8 /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
 		A78AA48915654A0C00B62AD8 /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
+		A7AAE73A15A64C6800781D56 /* mine.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mine.js; sourceTree = "<group>"; };
 		A7B1F66F1563EF2F000254EF /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B1F6731563EF2F000254EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A7B1F6751563EF2F000254EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -138,10 +139,18 @@
 		A76863B4159E422500868064 /* js */ = {
 			isa = PBXGroup;
 			children = (
+				A7AAE73915A64C6800781D56 /* step_definitions */,
 				A76863DC159E422500868064 /* main.js */,
-				A76863DD159E422500868064 /* step_definitions.js */,
 			);
 			path = js;
+			sourceTree = "<group>";
+		};
+		A7AAE73915A64C6800781D56 /* step_definitions */ = {
+			isa = PBXGroup;
+			children = (
+				A7AAE73A15A64C6800781D56 /* mine.js */,
+			);
+			path = step_definitions;
 			sourceTree = "<group>";
 		};
 		A7B1F6641563EF2F000254EF = {
@@ -333,6 +342,7 @@
 				A78AA48315643B9000B62AD8 /* PlayerCell.m in Sources */,
 				A78AA4871564453600B62AD8 /* PlayerDetailsViewController.m in Sources */,
 				A78AA48A15654A0C00B62AD8 /* GamePickerViewController.m in Sources */,
+				A7AAE73B15A64C6800781D56 /* mine.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
