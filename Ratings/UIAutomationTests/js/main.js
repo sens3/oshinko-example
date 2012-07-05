@@ -1,13 +1,13 @@
-// Load Kraut
-#import "kraut/kraut.js"
+// Load Oshinko
+#import "oshinko/oshinko.js"
 
 // Load your step definitions (if you have any)
 #import "step_definitions.js"
 
 // set the path to your features directory
 
-Kraut.init({
+Oshinko.init({
   featureDir: "features"
 });
 
-Kraut.run(); 
+Oshinko.run(); 

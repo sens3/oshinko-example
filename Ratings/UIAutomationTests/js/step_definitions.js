@@ -1,5 +1,5 @@
 
-Kraut.given(/I fill in table view text field "([^\"]*)" with "([^\"]*)"/, function (window, captures) {
+Oshinko.given(/I fill in table view text field "([^\"]*)" with "([^\"]*)"/, function (window, captures) {
     
     var fieldName = captures[0];
     var fieldValue = captures[1];
@@ -12,7 +12,7 @@ Kraut.given(/I fill in table view text field "([^\"]*)" with "([^\"]*)"/, functi
     
 });
 
-Kraut.then(/the last table view cell should read "([^\"]*)"/, function(window, captures) {
+Oshinko.then(/the last table view cell should read "([^\"]*)"/, function(window, captures) {
 
     var tableView = window.tableViews()[0];
     var cells = tableView.cells();
@@ -22,7 +22,7 @@ Kraut.then(/the last table view cell should read "([^\"]*)"/, function(window, c
     assertEquals(text, lastCell.name());
 });
 
-Kraut.then(/I should see a text field with text "([^\"]*)"/, function(window, captures) {
+Oshinko.then(/I should see a text field with text "([^\"]*)"/, function(window, captures) {
     
     var element = window.staticTexts()[0];
     var text = captures[0];
