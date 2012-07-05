@@ -1,3 +1,4 @@
 *.trace
 .DS_Store
 DerivedData
+xcuserdata

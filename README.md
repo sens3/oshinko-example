@@ -9,7 +9,10 @@ This app was built going through [this tutorial](http://www.raywenderlich.com/51
 	git submodule update --init --recursive
 	open Ratings.xcodeproj
 	
-	## build the project in xcode ##
+	## make sure your DerivedData dir is relative to the project
+	## Preferences -> Locations -> Derived Data -> Relative
+	
+	## build the project in xcode
 	
 	cd Ratings/UIAutomationTests/
 	./run_instruments.sh
