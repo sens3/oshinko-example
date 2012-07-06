@@ -10,7 +10,6 @@
 		A78AA48315643B9000B62AD8 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A78AA48215643B9000B62AD8 /* PlayerCell.m */; };
 		A78AA4871564453600B62AD8 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78AA4861564453600B62AD8 /* PlayerDetailsViewController.m */; };
 		A78AA48A15654A0C00B62AD8 /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A78AA48915654A0C00B62AD8 /* GamePickerViewController.m */; };
-		A7AAE73B15A64C6800781D56 /* mine.js in Sources */ = {isa = PBXBuildFile; fileRef = A7AAE73A15A64C6800781D56 /* mine.js */; };
 		A7B1F6741563EF2F000254EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B1F6731563EF2F000254EF /* UIKit.framework */; };
 		A7B1F6761563EF2F000254EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B1F6751563EF2F000254EF /* Foundation.framework */; };
 		A7B1F6781563EF2F000254EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B1F6771563EF2F000254EF /* CoreGraphics.framework */; };
@@ -342,7 +341,6 @@
 				A78AA48315643B9000B62AD8 /* PlayerCell.m in Sources */,
 				A78AA4871564453600B62AD8 /* PlayerDetailsViewController.m in Sources */,
 				A78AA48A15654A0C00B62AD8 /* GamePickerViewController.m in Sources */,
-				A7AAE73B15A64C6800781D56 /* mine.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

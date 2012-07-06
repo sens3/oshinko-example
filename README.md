@@ -9,12 +9,4 @@ This app was built by going through [this (unrelated) tutorial](http://www.raywe
 	git clone git@github.com:sens3/oshinko-example.git
 	cd oshinko-example
 	git submodule update --init --recursive
-	open Ratings.xcodeproj
-	
-	## make sure your DerivedData dir is relative to the project
-	## Preferences -> Locations -> Derived Data -> Relative
-	
-	## build the project in xcode
-	
-	cd Ratings/UIAutomationTests/
-	./run_instruments.sh
+	./run_automation.sh
