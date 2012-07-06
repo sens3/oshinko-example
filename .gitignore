@@ -1,5 +1,6 @@
 *.trace
 .DS_Store
+.oshinko
 DerivedData
 xcuserdata
 build
