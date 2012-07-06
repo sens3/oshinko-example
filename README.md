@@ -9,4 +9,4 @@ This app was built by going through [this (unrelated) tutorial](http://www.raywe
 	git clone git@github.com:sens3/oshinko-example.git
 	cd oshinko-example
 	git submodule update --init --recursive
-	./run_automation.sh
+	./Ratings/UIAutomationTests/js/oshinko/bin/run
