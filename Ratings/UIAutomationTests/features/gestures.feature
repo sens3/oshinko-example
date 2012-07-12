@@ -3,5 +3,5 @@ Feature:
     
     Scenario: View Gestures tab
         Given I am on the "Gestures" tab
-        Then I should see a text field with text "Second Tab"
+				Then I should see the "Big Label" label
         

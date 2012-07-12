@@ -18,4 +18,4 @@ Feature:
      
         When I fill in table view text field "Player Name Field" with "John Doe"
         And I tap the right navigation bar button
-        Then the last table view cell should read "John Doe, Chess"
+        Then the last "Players" table view cell should read "John Doe, Chess"

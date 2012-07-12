@@ -4,27 +4,35 @@ Oshinko.given(/I fill in table view text field "([^\"]*)" with "([^\"]*)"/, func
     var fieldName = captures[0];
     var fieldValue = captures[1];
     
-    var tableView = window.tableViews()[0]
-    var cell = tableView.cells().firstWithName(fieldName);
-    var field = cell.textFields()[0];
+    var field = Oshinko.findElement("UIATextField", fieldName);
+    
+    // var tableView = window.tableViews()[0]
+    // var cell = tableView.cells().firstWithName(fieldName);
+    // var field = cell.textFields()[0];
     
     field.setValue(fieldValue);
     
 });
 
-Oshinko.then(/the last table view cell should read "([^\"]*)"/, function(window, captures) {
+Oshinko.then(/the last "([^\"]*)" table view cell should read "([^\"]*)"/, function(window, captures) {
 
-    var tableView = window.tableViews()[0];
+    var tvName = captures[0];
+    var text = captures[1];
+    var tableView = Oshinko.findElement('UIATableView', tvName);
+    assertNotNull(tableView);
     var cells = tableView.cells();
     var lastCell = cells[cells.length - 1 ];
-    var text = captures[0];
     
     assertEquals(text, lastCell.name());
 });
 
-Oshinko.then(/I should see a text field with text "([^\"]*)"/, function(window, captures) {
+Oshinko.then(/I should see a label "([^\"]*)" with text "([^\"]*)"/, function(window, captures) {
     
-    var element = window.staticTexts()[0];
-    var text = captures[0];
-    assertEquals(text, element.name());
+    var field = Oshinko.findElement("UIAStaticText", captures[0]);
+    var text = captures[1];
+    UIALogger.logMessage("Value: " + field.value());
+    UIALogger.logMessage("Name: " + field.name());
+    UIALogger.logMessage("Label: " + field.label());
+    assertNotNull(field);
+    assertEquals(text, field.label());
 });

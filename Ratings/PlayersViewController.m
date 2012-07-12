@@ -32,6 +32,7 @@
 {
     [super viewDidLoad];
 
+    [self.tableView setAccessibilityLabel:@"Players"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
