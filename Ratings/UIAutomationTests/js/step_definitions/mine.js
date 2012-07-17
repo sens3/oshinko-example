@@ -1,5 +1,5 @@
 
-Oshinko.given(/I fill in table view text field "([^\"]*)" with "([^\"]*)"/, function (window, captures) {
+Oshinko.given(/^I fill in table view text field "([^\"]*)" with "([^\"]*)"$/, function (window, captures) {
     
     var fieldName = captures[0];
     var fieldValue = captures[1];
@@ -14,7 +14,7 @@ Oshinko.given(/I fill in table view text field "([^\"]*)" with "([^\"]*)"/, func
     
 });
 
-Oshinko.then(/the last "([^\"]*)" table view cell should read "([^\"]*)"/, function(window, captures) {
+Oshinko.then(/^the last "([^\"]*)" table view cell should read "([^\"]*)"$/, function(window, captures) {
 
     var tvName = captures[0];
     var text = captures[1];
@@ -26,7 +26,7 @@ Oshinko.then(/the last "([^\"]*)" table view cell should read "([^\"]*)"/, funct
     assertEquals(text, lastCell.name());
 });
 
-Oshinko.then(/I should see a label "([^\"]*)" with text "([^\"]*)"/, function(window, captures) {
+Oshinko.then(/^I should see a label "([^\"]*)" with text "([^\"]*)"$/, function(window, captures) {
     
     var field = UIQuery.firstKindWithName('staticTexts', captures[0]);
     var text = captures[1];

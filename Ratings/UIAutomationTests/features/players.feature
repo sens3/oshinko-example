@@ -8,7 +8,7 @@ Feature:
         Then I should see a navigation bar with title "Players"
         And I should see a table view with 3 cells
         And I should see a table view with 3 visible cells
-        And I should see a table view with 0 groups 
+        And I should see a table view with 0 groups
         
     
     Scenario: Adding a Player       
